@@ -37,6 +37,7 @@ The graph was then created from the percentages of outcomes vs the ranges of goa
 ### Challenges and Difficulties Encountered
 **Theater Outcomes Based on Launch Date**
 - When looking at this dataset, it should be noted that when comparing months vs outcome, years 2009 and 2017 do not reflect full 12-month years.  Fortunately, the additions of these two years in the data do not significantly change any overall trends.
+
 **Outcomes Based on Goals**
 - I found it tedious to adjust each cell's formula individually, as suggested in the tutorial clip, and so I separated the goal ranges into two separate columns, one with the lower amount of the range and another with the upper amount of the range (see hidden columns A and B) and adjusted my formula accordingly to reference these cells rather than input the actual numerical figures in my formula.  This way, I could easily click and drag my formula, changing the outcome in batches using the Find and Replace function.
 - To create some checkpoints in my work, I created a simple pivot table from the original data to show the total count of campaigns per outcome to compare to the total numbers from my '=COUNTIFS' formulas to make sure I was coming up with the same total numbers and my table was complete. Likewise, I summed the percentages to make sure each row added to 100%.
