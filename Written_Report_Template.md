@@ -8,11 +8,11 @@ The purpose of this analysis is to optimize Louise's fundraising efforts through
 
 ## Analysis and Challenges
 **Analysis of Original Data Set**
-1. Original data set was replicated to sheet titled "Edited Data" for purposes of manipulating data while retaining a revertable set of original data.
-2. The following changes and/or additions were made to the original data set:
+	1. Original data set was replicated to sheet titled "Edited Data" for purposes of manipulating data while retaining a revertable set of original data.
+	2. The following changes and/or additions were made to the original data set:
 	- Columns 'deadline' and 'launched_at' were converted from Epoch time standard short date format using '=(I2/86400)+DATE(1970,1,1)', creating columns 'Deadline Date' and 'Launched_At Date' 
-	- Column 'Category and Subcategory' was divied into two columns, Parent Category and Subcategory using the Text to Columns function
-	- Column 'Years' was added, extracting the year into a dedicated column from the column 'Launched_At Date'
+		- Column 'Category and Subcategory' was divied into two columns, Parent Category and Subcategory using the Text to Columns function
+		- Column 'Years' was added, extracting the year into a dedicated column from the column 'Launched_At Date'
 
 ### Analysis of Outcomes Based on Launch Date
 To produce the following graph,
@@ -44,23 +44,23 @@ The graph was then created from the percentages of outcomes vs the ranges of goa
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-1. Theater kickstarters that launch between May and June tend to have the greatest likelihood of success despite the overall increase in theater kickstarters being launched at that time. Louise should not need to worry about getting lost in the category.
-2. Despite the lesser number of overall theater kickstarters being launched in the Fall and Winter months (Sept-Jan), there seems to be a lesser appetite for theater overall as there is an uptick in failures and downward trend in successes.
+	1. Theater kickstarters that launch between May and June tend to have the greatest likelihood of success despite the overall increase in theater kickstarters being launched at that time. Louise should not need to worry about getting lost in the category.
+	2. Despite the lesser number of overall theater kickstarters being launched in the Fall and Winter months (Sept-Jan), there seems to be a lesser appetite for theater overall as there is an uptick in failures and downward trend in successes.
 
 - What can you conclude about the Outcomes based on Goals?
-Kickstarters with a goal below $10k is more likely to reach its fundraising goal than campaigns who aspire for greater amounts.
+	- Kickstarters with a goal below $10k is more likely to reach its fundraising goal than campaigns who aspire for greater amounts.
 
 - What are some limitations of this dataset?
-1. The success of kickstarter campaigns typically goes beyond seasonality and goal setting, particularly for theater.
-	- Kickstarter campaigns often incentivize multiple levels of pledging that allow backers to 'unlock' access or gifts, which may skew data like, the average number of backers or the average amount paid by each backer, as the campaign itself may set those ranges.
-	- Theater-going often fluctuates with the economy, as it is typically an expensive cost for entertainment. The data can only average between the years provided, but cannot anticipate luxury spending habits when Louise is ready to debut her play.
-	- The zeitgeist and fame of associated acts cannot be taken into account from this dataset. The talent or fandom associated with any show, stage show or otherwise, can greatly affect the success of a kickstarter campaign, potentially leading to difficult to find anomalies in the data.
-2. Some kickstarters are advertised with paid media, which may affect its success rate, which is unknowable from this dataset. 
-3. It would be imprudent to compare any data without isolating the country from this dataset because the monetary amounts represent different currencies and is not normalized.
+	1. The success of kickstarter campaigns typically goes beyond seasonality and goal setting, particularly for theater.
+		- Kickstarter campaigns often incentivize multiple levels of pledging that allow backers to 'unlock' access or gifts, which may skew data like, the average number of backers or the average amount paid by each backer, as the campaign itself may set those ranges.
+		- Theater-going often fluctuates with the economy, as it is typically an expensive cost for entertainment. The data can only average between the years provided, but cannot anticipate luxury spending habits when Louise is ready to debut her play.
+		- The zeitgeist and fame of associated acts cannot be taken into account from this dataset. The talent or fandom associated with any show, stage show or otherwise, can greatly affect the success of a kickstarter campaign, potentially leading to difficult to find anomalies in the data.
+	2. Some kickstarters are advertised with paid media, which may affect its success rate, which is unknowable from this dataset. 
+	3. It would be imprudent to compare any data without isolating the country from this dataset because the monetary amounts represent different currencies and is not normalized.
 
 - What are some other possible tables and/or graphs that we could create?
-1. Table: Number of days required to reach the goal vs goal amount, organized by outcome. This could answer questions like:
-	- On average, how many backers do I need per day to reach my goal?
-	- What is the minimum number of days I need between my launch and deadline?
-2. Graph: Launch Day of Week or Time of Day vs Outcome. This could answer if there is an optimal day of week or time of day to launch the campaign, as kickstarters often require social sharing to create buzz (e.g., word of mouth). Can also support any paid media efforts.
-3. Table: Retrieve name, blurb, goal between $10k-$14k, outcome:successful, country:US, subcategory:play, and spotlight:true to find case studies on Kickstarter's Spotlight that may be applicable to Louise's play.
+	1. Table: Number of days required to reach the goal vs goal amount, organized by outcome. This could answer questions like:
+		- On average, how many backers do I need per day to reach my goal?
+		- What is the minimum number of days I need between my launch and deadline?
+	2. Graph: Launch Day of Week or Time of Day vs Outcome. This could answer if there is an optimal day of week or time of day to launch the campaign, as kickstarters often require social sharing to create buzz (e.g., word of mouth). Can also support any paid media efforts.
+	3. Table: Retrieve name, blurb, goal between $10k-$14k, outcome:successful, country:US, subcategory:play, and spotlight:true to find case studies on Kickstarter's Spotlight that may be applicable to Louise's play.
