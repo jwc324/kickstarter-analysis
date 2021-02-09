@@ -17,14 +17,14 @@ The purpose of this analysis is to optimize Louise's fundraising efforts through
 ### Analysis of Outcomes Based on Launch Date
 To produce the following graph,
 
-![Theater Outcomes Based on Launch Date](theater_outcome_vs_launch.png)
+![Theater Outcomes Based on Launch Date](/resources/theater_outcome_vs_launch.png)
 
 A pivot table was created from the "Edited Data" tab to filter by subcategory plays and years, showing time vs outcome.
 
 ### Analysis of Outcomes Based on Goals
 To produce the following graph,
 
-![Outcomes Based on Goals](Outcomes_vs_Goals.png)
+![Outcomes Based on Goals](/resources/Outcomes_vs_Goals.png)
 
 A table was created extracting the counts of outcomes and organized into ranges of goals using the '=COUNTIFS' function, whereby the parameters were:
 	- subcategory 'play'
